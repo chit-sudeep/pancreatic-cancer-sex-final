@@ -349,7 +349,7 @@ vfitTumorFeMaleandTumorMaleContr = contrasts.fit(vfitTumorFeMaleandTumorMale, co
 #  Perform empirical Bayes smoothing of standard errors
 head(coef(vfitTumorFeMaleandTumorMale))
 efitvsdTumorData = eBayes(vfitTumorFeMaleandTumorMaleContr)
-ttvpTumor <- topTableAndVolcanoPlotGenerator(efitvsdTumorData, 0.3, 0.05)
+ttvpTumor <- topTableAndVolcanoPlotGenerator(efitvsdTumorData, 0.4, 0.05)
 
 topTableTumor <- ttvpTumor[[1]]
 volcanPlotTumor <- ttvpTumor[[2]]
