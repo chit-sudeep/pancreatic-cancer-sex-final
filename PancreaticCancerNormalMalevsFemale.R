@@ -347,7 +347,7 @@ vfitNormalFeMaleandNormalMaleContr = contrasts.fit(vfitNormalFeMaleandNormalMale
 head(coef(vfitNormalFeMaleandNormalMale))
 efitvsdNormalData = eBayes(vfitNormalFeMaleandNormalMaleContr)
 
-ttvpNormal <- topTableAndVolcanoPlotGenerator(efitvsdNormalData, 0.4, 0.05)
+ttvpNormal <- topTableAndVolcanoPlotGenerator(efitvsdNormalData, 0.3, 0.05)
 
 topTableNormal <- ttvpNormal[[1]]
 volcanPlotNormal <- ttvpNormal[[2]]
